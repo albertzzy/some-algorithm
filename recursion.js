@@ -11,9 +11,10 @@ function tco(f) {
     if (!active) {
       active = true;
       while (accumulated.length) {
-    // console.log(accumulated);
+//      console.log(accumulated.length);
         var arg = accumulated.shift();
-        
+//       console.log('----');
+//       console.log(accumulated.length);
 
         value = f.apply(this, arg);
       }
