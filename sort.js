@@ -22,17 +22,20 @@
 	## 简单选择排序
 
 		```javascript
+
 			function selectSort(arr, n){  
-			    var key, tmp;  
+			    var k, tmp;  
 			    for(var i = 0; i< n; ++i) { 
-			    	key = i;
 				    for(var j=i+1 ;j< n; ++j) {  
-				        if(a[k] > a[j]) k = j;  
+				        if(a[i] > a[j]){
+				        	k = j;  
+				        } 
 				    }  
 
-			        key = SelectMinKey(a, n,i);           
-			        if(key != i){  
-			            tmp = a[i];  a[i] = a[key]; a[key] = tmp; 
+			        if(k != i){  
+			            tmp = a[i];  
+			            a[i] = a[k]; 
+			            a[k] = tmp; 
 			        }  
 			    }  
 			}  
@@ -42,7 +45,9 @@
 
 
 	## 堆排序	
-
+	```javascript
+		//http://blog.csdn.net/hguisu/article/details/7776068
+	```
 
 
 
